@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "../card/Card";
 import styles from "./Dialog.module.css";
 import { DialogBackdrop } from "./DialogBackdrop";
+import { DialogFooter } from "./DialogFooter";
 import { DialogHeader } from "./DialogHeader";
 
 export const Dialog: React.FC<{
@@ -15,7 +16,7 @@ export const Dialog: React.FC<{
         <Card>
           <DialogHeader title={props.title} />
           {props.children}
-          <footer></footer>
+          <DialogFooter />
         </Card>
       </div>
     </>
